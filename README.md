@@ -4,6 +4,8 @@
 
 An (unofficial) native MacOS App for feedly.com.
 
+_Note only supports feedly.com login._
+
 # Install
 
 ## Homebrew Cask
