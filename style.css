@@ -1,0 +1,9 @@
+.button.google,
+.button.facebook,
+.button.twitter,
+.button.apple,
+.button.microsoft,
+.button.evernote,
+.button.enterprise {
+	display: none !important;
+}

@@ -1,8 +1,8 @@
-# {APPNAME}
+# feedly
 
 ![](screenshot.png)
 
-An (unofficial) native MacOS App for {APPNAME}.
+An (unofficial) native MacOS App for feedly.com.
 
 # Install
 
@@ -13,21 +13,21 @@ An (unofficial) native MacOS App for {APPNAME}.
 ```bash
 brew tap aubreypwd/homebrew-cask
 brew update
-brew cask install {SLUG}
+brew cask install feedly
 ```
 
 ### Upgrade
 
 ```
 brew update
-brew upgrade {SLUG}
+brew upgrade feedly
 ```
 
 ## Download
 
-Or download the `.dmg` in [releases](https://github.com/aubreypwd/{SLUG}-mac/releases/latest) and install per usual.
+Or download the `.dmg` in [releases](https://github.com/aubreypwd/feedly-mac/releases/latest) and install per usual.
 
-*_Note, you will have to Right-click on the {APPNAME} to open for the first time._*
+*_Note, you will have to Right-click on the feedly to open for the first time._*
 
 ---
 

@@ -1,15 +1,15 @@
 {
-  "name": "{SLUG}",
+  "name": "feedly",
   "version": "1.0.0",
-  "description": "An (unofficial) native MacOS App for {APPNAME}.",
+  "description": "An (unofficial) native MacOS App for feedly.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name '{APPNAME}' --platform 'Mac' --min-width {WIDTH} --min-height {HEIGHT} --width {WIDTH} --height {HEIGHT} --flash --verbose --darwin-dark-mode-support --icon ./icon.png '{URL}' ./build",
-    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/{APPNAME}-darwin-x64/{APPNAME}.app' --overwrite --dmg-title='{APPNAME}' --identity='Aubrey Portwood' ./dist/ || true && mv './dist/{APPNAME} 1.0.0.dmg' \"./dist/{APPNAME} $npm_package_version.dmg\""
+    "nativefier": "./node_modules/.bin/nativefier --name 'feedly' --platform 'Mac' --flash --inject './style.css' --verbose --darwin-dark-mode-support --icon ./icon.png 'https://feedly.com/i/my' ./build",
+    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/feedly-darwin-x64/feedly.app' --overwrite --dmg-title='feedly' --identity='Aubrey Portwood' ./dist/ || true && mv './dist/feedly 1.0.0.dmg' \"./dist/feedly $npm_package_version.dmg\""
   },
   "author": "Aubrey Portwood",
   "license": "GPL-3.0-or-later",
